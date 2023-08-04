@@ -19,8 +19,7 @@ const agregarEstudiante = async (req, res) => {
             email,
             nombre,
             telefono,
-            pais,
-            mensaje
+            pais
         })
 
         res.json(estudianteGuardado);

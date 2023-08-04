@@ -1,5 +1,5 @@
 import jwt from "jsonwebtoken";
-import Usuarios from "../models/Usuarios.js";
+import Usuarios from "../models/Usuario.js";
 import generarId from "../helpers/generarId.js";
 import generarJWT from "../helpers/generarJWT.js";
 import emailOlvidePassword from "../helpers/emailOlvidePassword.js";

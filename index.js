@@ -4,6 +4,7 @@ import conectarDB from "./config/db.js";
 import dotenv from 'dotenv';
 
 import prePegistroRoutes from './routes/aspirantesRoutes.js';
+import usersRoutes from './routes/usuariosRoutes.js';
 
 
 
@@ -16,7 +17,7 @@ dotenv.config();
 conectarDB();
 
 
-const dominiosPermitidos = [process.env.FRONTEND_URL, 'http://localhost:3000'];
+/* const dominiosPermitidos = [process.env.FRONTEND_URL, 'http://localhost:3000'];
 const corsOptions = {
     origin: function(origin, callback) {
         if(dominiosPermitidos.indexOf(origin) !== -1) {
@@ -27,10 +28,11 @@ const corsOptions = {
         }
     }
 }
-app.use(cors(corsOptions));
+app.use(cors(corsOptions)); */
 
 
-app.use('/api/pre-registro', prePegistroRoutes);
+app.use('/api/pre-register', prePegistroRoutes);
+//app.use('/api/register-user',usersRoutes);
 
 
 

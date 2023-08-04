@@ -1,6 +1,6 @@
 import jwt from "jsonwebtoken";
 
-import Usuarios from "../models/Usuarios.js";
+import Usuarios from "../models/Usuario.js";
 
 const checkAuth = async (req, res, next) => {
   //Entro checkout
